@@ -1,0 +1,106 @@
+<!-- <div class="login" style="margin-top: 10em">
+<div class="container h-100">
+  <div class="d-flex justify-content-center h-100">
+    <div class="user_card">
+      <div class="d-flex justify-content-center">
+        <div class="brand_logo_container">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png" class="brand_logo" alt="Logo">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center form_container">
+        <form #userForm="ngForm">
+          <div class="input-group mb-3">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" name="" class="form-control input_user" value="" placeholder="username" name="userName" ngModel>
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+            <input type="password" name="" class="form-control input_pass" value="" placeholder="password" name="password" ngModel>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customControlInline">
+              <label class="custom-control-label" for="customControlInline">Remember me</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex justify-content-center mt-3 login_container">
+        <button type="button" name="button" (click)="submit(userForm.value)" class="btn login_btn">Login</button>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-center links">
+          Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+        </div>
+        <div class="d-flex justify-content-center links">
+          <a href="#">Forgot your password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+<div class="container register">
+  <div class="row">
+    <div class="col-md-3 register-left">
+      <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+      <h3>Welcome</h3>
+      <p>You are 30 seconds away from earning your own money!</p>
+      <input type="submit" name="" value="sign Up" /><br />
+    </div>
+    <div class="col-md-9 register-right">
+      <div class="tab-content pt-4" id="myTabContent">
+        <div class="container">
+          <div class="d-flex justify-content-center h-100">
+            <div class="card">
+              <div class="card-header">
+                <h3>Sign In</h3>
+                <div class="d-flex justify-content-end social_icon">
+                  <span><i class="fab fa-facebook-square"></i></span>
+                  <span><i class="fab fa-google-plus-square"></i></span>
+                  <span><i class="fab fa-twitter-square"></i></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="username" formControlName='email'>
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="password" formControlName="password">
+                  </div>
+                  <div class="row align-items-center remember">
+                    <input type="checkbox">Remember Me
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btnRegister" value="Register" />
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-center links">
+                  Don't have an account?<a href="#">Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="#">Forgot your password?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

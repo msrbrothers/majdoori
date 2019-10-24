@@ -1,0 +1,236 @@
+<!-- <div class="container pt-4">
+    <form #userForm="ngForm">
+        <mat-horizontal-stepper>
+            <mat-step label="Basic Info" completed="false" class="card">
+                <div class="card p-2 mt-3">
+                    <div ngModelGroup="basicInfo" class="row m-5">
+                        <p class="col-md-12"><b>Basic Information</b></p>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder=" Enter First Name" name="fName" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder=" Enter Last Name" name="lName" ngModel>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Enter Mail" name="mail" ngModel>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Enter Mobile Number" name="mobNo" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Password" name="password" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Conferm Password" name="conFassword" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                                <mat-label >Select Gender</mat-label>
+                            <mat-select  name="gender" ngModel required>
+                                <mat-option value="male">male </mat-option>
+                                <mat-option value="Female">Female</mat-option>
+                                <mat-option value="C Male">C Male</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <div class="col-md-12  text-right"> 
+                            <button color="primary" mat-raised-button matStepperNext>Next</button>
+                        </div>
+                    </div>
+
+                </div>
+            </mat-step>
+            <mat-step label="Address" completed="false" >
+                <div class="card p-2 mt-3">
+                    <div ngModelGroup="Address">
+                        <p class="col-md-12"><b>Address Details</b></p>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Enter State" name="state" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Enter Distric" name="distric" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Enter Block" name="block" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="Enter Post" name="Post" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="City Village Name" name="villageName" ngModel>
+                        </mat-form-field>
+                        <div class="col-md-12 mb-5 text-right">
+                            <button class="m-2" color="warn" mat-raised-button matStepperPrevious>Back</button>
+                            <button color="primary" mat-raised-button matStepperNext>Next</button>
+                        </div>
+                    </div>
+                </div>
+            </mat-step>
+            <mat-step label="Work Info" completed="false" optional>
+                <div class="card p-2 mt-3">
+                    <div ngModelGroup="workInfo">
+                        <p class="col-md-12"><b>Work Information</b></p>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                             <mat-label >Select </mat-label>
+                            <mat-select name="workType" ngModel >
+                                <mat-option value="work A">Work A</mat-option>
+                                <mat-option value="work B">Work B</mat-option>
+                                <mat-option value="work C">Work c</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <mat-label >Shift </mat-label>
+                           <mat-select name="shift" ngModel >
+                               <mat-option value="Day">Day</mat-option>
+                               <mat-option value="Nigtht">Nigtht</mat-option>
+                               <mat-option value="Day/night">Day/night</mat-option>
+                           </mat-select>
+                       </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="start Price" name="sPrice" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <input required matInput placeholder="End price" name="ePrice" ngModel>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width form-group col-md-6">
+                            <mat-label >Price/Hover </mat-label>
+                           <mat-select name="pricePerOver" ngModel >
+                               <mat-option value="100">100</mat-option>
+                               <mat-option value="200">200</mat-option>
+                               <mat-option value="300">300</mat-option>
+                           </mat-select>
+                       </mat-form-field>
+                        <div class="col-md-12 mb-5 text-right">
+                            <button class="m-2" color="warn" mat-raised-button matStepperPrevious>Back</button>
+                            <button color="primary" (click)="submit(userForm.value)" mat-raised-button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </mat-step>
+
+         /mat-horizontal-stepper>
+    </form>
+</div> -->
+
+
+
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+            <h3>Welcome</h3>
+            <p>You are 30 seconds away from earning your own money!</p>
+            <input type="submit" name="" value="Login" /><br />
+        </div>
+        <div class="col-md-9 register-right">
+            <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                </li>
+            </ul> -->
+            <div class="tab-content card"
+                style="margin-left: 91px; margin-right: 91px; margin-top: 18px;margin-bottom: 6px;" id="myTabContent">
+                <!-- <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> -->
+                <div class="card-header">
+                    <h3>ragisteration</h3>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="signUpform" (ngSubmit)="onSubmit(signUpform.value)">
+
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="First Name *" value="" formControlName="fName">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Last Name *" value="" formControlName="lName"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" value="" formControlName="password" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password *"
+                                        value="" formControlName="confirmPass" />
+                                </div>
+                               
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" value="" formControlName="email"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone"
+                                        class="form-control" placeholder="Your Phone *" value="" formControlName="phoneNo"/>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" formControlName="gendar">
+                                        <option class="hidden" selected="true" disabled>select gender </option>
+                                        <option>Male </option>
+                                        <option>Female </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Your age *"
+                                        value="" formControlName="age"/>
+                                </div>
+                                <input type="submit" class="btnRegister" value="Register" />
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+                <!-- </div> -->
+                <!-- <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3 class="register-heading">Apply as a Hirer</h3>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" maxlength="10" minlength="10" class="form-control"
+                                    placeholder="Phone *" value="" />
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option class="hidden" selected disabled>Please select your Sequrity Question
+                                    </option>
+                                    <option>What is your Birthdate?</option>
+                                    <option>What is Your old Phone Number</option>
+                                    <option>What is your Pet Name?</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                            </div>
+                            <input type="submit" class="btnRegister" value="Register" />
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</div>

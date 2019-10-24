@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    /* background:url(/assets/images/ravi.jpg); */
+    background: #363ab4;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
