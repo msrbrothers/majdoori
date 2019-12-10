@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators,FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { LoginService } from '../../../services/login.service';
 // import Stepper from 'bs-stepper';
 @Component({
@@ -9,9 +9,9 @@ import { LoginService } from '../../../services/login.service';
 })
 export class SignUpComponent implements OnInit {
   signUpform;
- 
 
-  constructor( private _LoginService : LoginService, private formBuilder: FormBuilder) {}
+
+  constructor(private _LoginService: LoginService, private formBuilder: FormBuilder) { }
 
   ngOnInit() {
     this.signUpform = this.formBuilder.group({
@@ -19,20 +19,29 @@ export class SignUpComponent implements OnInit {
       lName: '',
       password: '',
       confirmPass: '',
-      email:'',
-      phoneNo:'',
-      gendar:'',
-      age:''
+      email: '',
+      phoneNo: '',
+      gendar: '',
+      age: ''
     });
   }
-     
-  onSubmit(value){
-    console.log("vlue",value);
-    this._LoginService.sigup(value)
-    
-  }
- 
 
+  onSubmit(value) {
+    console.log(this.signUpform );
+    
+    var body = {
+      fName: this.signUpform.value.fName,
+      lName: this.signUpform.value.lName,
+      password: this.signUpform.value.password,
+      email: this.signUpform.value.email,
+      phoneNo: this.signUpform.value.phoneNo,
+      gendar: this.signUpform.value.gendar,
+      age: this.signUpform.value.age,
+      imageUrl: ''
+    }
+    this._LoginService.sigup(body)
+
+  }
 }
 
 

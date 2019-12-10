@@ -19,5 +19,6 @@ body{
     margin-top: 30%;
     margin-bottom: 3%;
     cursor: pointer;
+    overflow: hidden;
 }
 

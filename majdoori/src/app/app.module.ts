@@ -12,6 +12,9 @@ import {MatButtonModule,} from '@angular/material/button';
 import { SidebarMenuComponent } from './components/dashboard-layout/sidebar-menu/sidebar-menu.component';
 import { HomeDashboardComponent } from './components/dashboard-layout/home-dashboard/home-dashboard.component';
 import { UserProfileComponent } from './components/dashboard-layout/user-profile/user-profile.component'
+import { CommonService } from './services/common.service';
+import { AboutUsComponent } from './components/login/about-us/about-us.component';
+import { OutsideLayoutComponent } from './components/login/outside-layout/outside-layout.component';
 
 
 @NgModule({
@@ -20,7 +23,9 @@ import { UserProfileComponent } from './components/dashboard-layout/user-profile
     routingComponent,
     SidebarMenuComponent,
     HomeDashboardComponent,
-    UserProfileComponent,    
+    UserProfileComponent,
+    AboutUsComponent,
+    OutsideLayoutComponent,    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,7 @@ import { UserProfileComponent } from './components/dashboard-layout/user-profile
     MatInputModule,
     MatSelectModule
   ],
-  providers: [LoginService],
+  providers: [LoginService,CommonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

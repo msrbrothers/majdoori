@@ -1,4 +1,4 @@
-<div class="container emp-profile">
+<!-- <div class="container emp-profile">
   <form method="post">
       <div class="row">
           <div class="col-md-4">
@@ -144,4 +144,50 @@
           </div>
       </div>
   </form>           
+</div> -->
+
+<div class="container pt-5">
+    <div class="row">
+        <div class=" card col-12">
+            <form [formGroup]="form" (ngSubmit)="updateFrofile(form.value)" class="row p-4" style="color: black;">
+                <div class="form-group col-md-4">
+                    <div class="profile-img">
+                        <img src="{{base64textString}}"
+                            alt="" />
+                        <div class="file btn btn-lg btn-primary">
+                            Change Photo
+                            <input type="file" name="file" formControlName="imgUrl" (change)="selectImage($event)"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="">First Name</label>
+                            <input id="fName" formControlName="fName" type="text" name="fName" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="">Last Name</label>
+                            <input id="lName" formControlName="lName" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                                <label for="">Mobile Number</label>
+                                <input id="phoneNo" formControlName="phoneNo" type="text" name="fName" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for=""></label>E-Mail
+                                <input id="email" formControlName="email" type="text" class="form-control">
+                            </div>
+                    </div>
+
+                </div>
+                <div class="form-group col-md-12 text-right">
+                    <button class="btn btn-primary" type="submit">Update</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
 </div>
+

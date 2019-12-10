@@ -1,20 +1,25 @@
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button (click)="side_menu_close()" class="w3-bar-item w3-large">Close &times;</button>
-    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  </div>
-  
-  <!-- Page Content -->
-  <div class="w3-teal">
-    <button class="w3-button w3-teal w3-xlarge" (click)="side_menu_open()">☰</button>
-    <div class="w3-container">
+<div class="w3-sidebar w3-bar-block " style="display:none ;    margin-top: 3.4em;" id="mySidebar">
+  <a  class="w3-bar-item w3-button" routerLink ="/majdoori/dashboard">Dashbord</a> 
+   <a  class="w3-bar-item w3-button" routerLink="/majdoori/profile">User Profile</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <div class="row">
+    <div class="col-10">
+      <img src="assets/images/majdoori.PNG" alt="Girl in a jacket"
+        style="height: 3em;width: 14em;border: 9px solid #333333;">
+      <button class="w3-button w3-teal w3-xlarge btn" (click)="side_menu_open()">☰</button>
+    </div>
+    <div class=" col-2 pr-5" style="text-align : right">
+      <img src="{{DP}}"  routerLink="/majdoori/profile" alt="Girl in a jacket" class="mt-1 text-md-center"
+        style="width: 3em;height: 3em;border-radius: 50%;/* border: 9px solid #333333; */">
     </div>
   </div>
-  
-  
   <div class="w3-container">
- 
   </div>
-
-  
+</div>
+<div class="w3-container">
+    <router-outlet></router-outlet>
+</div>
